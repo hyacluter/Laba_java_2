@@ -7,9 +7,8 @@ public class House {
     private String floorWord(int n) {
         int lastTwo=n%100;
         int lastOne=n%10;
-        if (lastTwo>=11 && lastTwo<=14) return "этажами";
+        if (lastTwo>=11) return "этажами";
         if (lastOne==1) return "этажом";
-        if (lastOne>=2 && lastOne<=4) return "этажами";
         return "этажами";
     }
     @Override
